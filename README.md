@@ -7,7 +7,7 @@ and then go to localhost:8080
 
 ---
 To view deployed project, go to:
-
+http://spellcheck-eunicel.rhcloud.com/
 
 --- 
 Credits: 

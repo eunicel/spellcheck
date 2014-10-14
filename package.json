@@ -22,5 +22,5 @@
     "underscore":"*",
     "fs":"*"
   },
-  "main":"server.js"
+  "main":"app/server.js"
 }
