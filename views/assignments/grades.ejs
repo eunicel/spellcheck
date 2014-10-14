@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title><%= title %></title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+
+	<body>
+    <div class="page_container">
+  		<!-- Log Out -->
+  		<form class="logout" name="logout" action="/users/logout" method="post">
+        		<input type="submit" class="btn" name="logout" value="Log Out">
+      	</form>
+
+      	<div>
+      		<!-- Header --> 
+      		<h1> Welcome, <%= session.name%>!</h1>
+      		<form action="/assignments/spell" method="get">
+        			<input id="new_assignment" name="spell" class="btn" type="submit" value="New assignment">
+        	</form>
+        	<h2>Past assignments</h2>
+      		<% for (var i = 0; i < assignments.length; i++){%>
+            <div class="assignment">
+              Assignment <%=i+1%> - Grade: <%= assignments[i].grade%>% 
+              <div class="content">
+                <%=assignments[i].content%>
+              </div>
+            </div>
+          <% } %>
+      	</div>
+      </div>
+	</body>
+</html>

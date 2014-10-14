@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+   		<title><%= title %></title>
+   		<link rel='stylesheet' href='/stylesheets/style.css' />
+   </head>
+
+   <body>
+      <div class="page_container">
+     		<!-- Log Out -->
+     		<form class="logout" name="logout" action="/users/logout" method="post">
+      		<input type="submit" class="btn" name="logout" value="Log Out">
+      	</form>
+
+      	<div>
+          <h1><%= title%></h1>
+      		<!-- Enter student work here --> 
+          Write a paragraph on a topic of your choice. You will be graded on your spelling!
+      		<form name="add" action="addassignment" method="post">
+        			<textarea id="assignment_content"type="textarea" name="assignment_content" rows="8" cols="70" placeholder="Enter your paragraph here"></textarea>
+          		<br>
+          		<!-- Submit -->
+        			<input id="assignment_submit" type="submit" class="btn" name="post" value="Submit">
+        		</form>
+      	</div>
+      </div>
+   </body>
+
+</html>

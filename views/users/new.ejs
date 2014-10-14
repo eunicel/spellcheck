@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <div class="page_container">
+        <form id="signup_form" name="signup" action="signup" method="post">
+          <h1><%= title %></h1>
+        	<input name="firstname" class="textbox" type="text" placeholder="First name" autofocus><br>
+    	    <input name="lastname" class="textbox" type="text" placeholder="Last name"><br>
+    	    <input name="username" class="textbox" type="text" placeholder="Username"><br>
+    	    <input name="password" class="textbox" type="password" placeholder="Password"><br><br>
+    	    <input id="signup_submit" class="btn" type="submit" value="Sign Up">
+    	  </form>
+      </div>
+  </body>
+
+</html>

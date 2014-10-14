@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="page_container">
+    	<form id="login_form" name="login" action="users/login" method="post">
+  	    <h1>Welcome to SpellCheck!</h1>
+  	    <input class="textbox" name="username" type="text" placeholder="Username" autofocus><br>
+  	    <input class="textbox" name="password" type="password" placeholder="Password"><br>
+  	    <input id="login_submit" type="submit" class="btn" value="Log In">
+  	  </form>
+      <br>
+      <div id="create_account">Don't have a SpellCheck account? <a href="/users/new">Sign up here!</a></div>
+    </div>
+	
+  </body>
+</html>

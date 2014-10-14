@@ -1,0 +1,139 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size:large;
+	background:#F0F8FC;
+	padding-bottom: 100px;
+}
+
+.page_container{
+	margin:0 auto;
+	width: 80%;
+	height:600px;
+	padding:20px;
+	border-radius:4px;
+}
+
+.logout{
+	float:right;
+}
+
+.btn{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 85%;
+    border-width: 1px;
+    border-color: #F2F2F2;
+    border-radius: 4px;
+    color: black;
+    height: 30px;
+    cursor:pointer;
+    background: #EDEDED;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin:2px;
+}
+
+#create_account{
+	display:block;
+	text-align:center;
+	font-size: medium;
+}
+
+#login_form{
+	display:block;
+	text-align: center;
+}
+
+.textbox{
+	background: white; 
+    border: 1px double #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 3px #333; 
+    color: #666; 
+    width:200px;
+    height:30px;
+    margin:10px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: medium;
+	padding:2px;
+}
+
+#login_submit{
+	width:204px;
+}
+
+#signup_form{
+	display:block;
+	text-align: center;
+}
+
+#signup_submit{
+	width:204px;
+}
+
+#assignment_content{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 15px;
+	width:100%;
+	background: white; 
+    border: 1px double #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 1px #333; 
+    color: #666; 
+	padding:2px;
+	height:300px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+#assignment_submit{
+	width:100px;
+}
+
+#new_assignment{
+	width:150px;
+}
+
+.content{
+	display:none;
+	color:#868686;
+	-webkit-animation: fade 1s; /* Chrome, Safari, Opera */
+    animation: fade 1s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fade {
+    from {
+    	height: 0%;
+    	color:white;
+    }
+    to {
+    	height: 100%;
+		color:#868686;
+    }
+}
+
+/* Standard syntax */
+@keyframes fade {
+    from {
+    	height: 0px;
+    	color:white;
+    }
+    to {
+    	height: 100px;
+		color:#868686;
+    }
+}
+
+.assignment{
+	margin-top:5px;
+	margin-bottom:5px;
+	padding:15px;
+	background:white;
+	border-radius: 4px;
+	border: 1px solid;
+	border-color:#F2F2F2;
+}
+.assignment:hover .content{
+	display: block;
+}
